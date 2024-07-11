@@ -13,6 +13,8 @@ function Home() {
           Loging in the "user".
         </p>
         <Link to={'/dashboard'}> Dashboard <div className="line"> </div> </Link>
+        <Link to={'/regaster'}> Regaster <div className="line"> </div> </Link>
+        
       </div>
     </section>
   );
