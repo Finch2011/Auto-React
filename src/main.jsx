@@ -6,9 +6,11 @@ import Home from "./pages/home";
 import { BrowserRouter ,Routes , Route } from 'react-router-dom';
 import Regaster from './components/regaster';
 import Login from './components/login';
+import { CounterContext } from './context/counterContext';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <CounterProvider>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -16,5 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path='/Login' element={<Login/>}/>
         </Routes>
       </BrowserRouter>
+      </CounterProvider>
   </React.StrictMode>
 );
