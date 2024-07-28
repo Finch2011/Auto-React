@@ -1,4 +1,4 @@
-import { useState , useRef } from "react";
+import { useState , useRef , useEffect } from "react";
 import "../pages/home.scss";
 import { ToastContainer, toast , Bounce} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,17 +29,7 @@ function Regaster() {
             )
         }).then(res => res.json())
         .then(console.log())
-        toast.info( <h1>Loading ...</h1>, {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-            });
+        
             navigate('/Login')
     }
   return (

@@ -5,19 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
 
 function Home() {
-  const playing = () =>{
-    toast.info( <h1>Loading ...</h1>, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      transition: Bounce,
-      });
-  }
+  
   return (
     <section className="home">
       <div className="welcome-message">
@@ -27,8 +15,8 @@ function Home() {
           Loging in the "user".
         </p>
         <Link to={'/dashboard'} > Dashboard <div className="line"> </div> </Link>
-        <ToastContainer/>
         <Link to={'/regaster'}> Regaster <div className="line"> </div> </Link>
+        <Link to={'/Login'}> Login <div className="line"> </div> </Link>
         
       </div>
     </section>
