@@ -18,7 +18,7 @@ function Login() {
           }).then(res => res)
           .then((output)=>{
             if(output.statusText === "Created"){
-              toast.success( <h1>ورود ...</h1>, {
+              toast.success( <p>ورود ...</p>, {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -28,7 +28,7 @@ function Login() {
                 progress: undefined,
                 theme: "light",
                 transition: Bounce,
-                onClose : () => navigate("/")
+                onClose : () => navigate("/dashboard")
                 });
                 
             }
@@ -52,6 +52,7 @@ function Login() {
     
     <br />
     <button onClick={handel}>Login</button>
+    <p>آیا حساب کاربری ندارید ؟ <Link to={"/regaster"}><span>ساخت حساب</span> </Link></p>
     </div>
   );
 }

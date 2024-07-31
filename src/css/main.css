@@ -61,4 +61,123 @@ h6 {
   font-family: roboto-medium;
 }
 
+section.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+section.home .welcome-message {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(76, 43, 226);
+  padding: 5rem 3rem;
+  color: #d6efd8;
+}
+section.home .welcome-message h1 {
+  font-size: 3rem;
+}
+section.home .welcome-message p {
+  width: 420px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: left;
+}
+section.home .welcome-message a {
+  width: max-content;
+  color: #d6efd8;
+  font-family: roboto;
+  position: relative;
+  padding: 0.5rem 0;
+}
+section.home .welcome-message a .line {
+  transition: all linear 0.3s;
+}
+section.home .welcome-message a:hover .line {
+  width: 100%;
+}
+section.home .welcome-message .line {
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  left: 0;
+  bottom: -0.1rem;
+  background-color: #d6efd8;
+}
+
+h1 {
+  color: white;
+}
+
+.Login-D-btn {
+  width: 40px;
+  height: 30px;
+  background-color: rgb(162, 27, 27);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.Login-D-btn:hover {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+
+span {
+  color: rgb(0, 132, 255);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(10, 29, 51);
+  max-width: 420px;
+  margin: 100px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home2 {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(76, 43, 226);
+  color: white;
+  border-radius: 10px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s linear;
+}
+
 /*# sourceMappingURL=main.css.map */

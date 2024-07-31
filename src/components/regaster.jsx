@@ -27,10 +27,24 @@ function Regaster() {
                     "grid" : Grid.current.value
                 }
             )
-        }).then(res => res.json())
-        .then(console.log())
-        
-            navigate('/Login')
+        }).then(res => res)
+        .then((output)=>{
+          if(output.statusText === "Created"){
+            toast.success( <p>درحال ساخت  حساب کاربری ...</p>, {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              transition: Bounce,
+              onClose : () => navigate("/Login")
+              });
+              
+          }
+        })
     }
   return (
     <section className="home2">
@@ -48,6 +62,7 @@ function Regaster() {
     <br />
  <button onClick={handel}>Regaster</button>
     <ToastContainer/>
+    <p>آیا حساب کاربری دارید ؟ <Link to={"/Login"}><span>ورود به حساب</span> </Link></p>
     </section>
   );
 }
