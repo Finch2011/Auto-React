@@ -3,6 +3,7 @@ import "./components.scss";
 
 import { Link , useNavigate } from "react-router-dom";
 import { ToastContainer, toast , Bounce } from 'react-toastify';
+import Nav from '../layouts/navbar'
 
 function Login() {
     const UserName = useRef();
@@ -42,6 +43,9 @@ function Login() {
     }
     const navigate = useNavigate()
   return (
+    <>
+    <Nav/>
+    <div className="main-Login">
     <div className="home2">
       <ToastContainer/>
     <label htmlFor="">UserName</label>
@@ -54,6 +58,9 @@ function Login() {
     <button onClick={handel}>Login</button>
     <p>آیا حساب کاربری ندارید ؟ <Link to={"/regaster"}><span>ساخت حساب</span> </Link></p>
     </div>
+    <img src="https://img.freepik.com/premium-vector/survey-research-illustration_90558-16.jpg" alt="w" />
+</div>
+    </>
   );
 }
 

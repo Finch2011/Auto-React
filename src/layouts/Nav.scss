@@ -1,0 +1,37 @@
+.nav-main{
+    // Display Style 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    // 
+    .nav-ul{
+        // Display Style 
+        display: flex;
+        align-items: center;
+        gap: 30px;          
+        // 
+        li{
+            // Font Style 
+        font-size: 19px;
+        color: white;
+        font-weight: 400;
+        // 
+    }
+    
+}
+.nav-btn{
+    // Display Style 
+    display: flex;
+    gap: 10px;
+    // 
+    button{
+        border: 1px solid white;
+        color: white;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+}

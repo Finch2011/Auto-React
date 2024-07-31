@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { Link , useNavigate } from "react-router-dom"
 import { ToastContainer, toast , Bounce } from 'react-toastify';
+import Nav from '../layouts/navbar'
+
 
 function Dashbord() {
     const navigate = useNavigate()
@@ -28,9 +30,17 @@ function Dashbord() {
     })
     return (
     <>
+    <Nav/>
     <ToastContainer/>
-    <h1> name : {localStorage.getItem("username")}</h1>
-    <h1>password : {localStorage.getItem("password")}</h1>
+    <div className="main-D">
+    <h2>id : {Math.floor(Math.random()*1000000)}</h2>
+    <h2> name : {localStorage.getItem("username")}</h2>
+    <h2>password : {localStorage.getItem("password")}</h2>
+    <br />
+    <hr />
+    <br />
+    <h2>bio : Hi I`m Kalil Rahimi I like car BMW</h2>
+    </div>
     </>
     )
 }

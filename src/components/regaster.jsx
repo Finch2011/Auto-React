@@ -2,7 +2,7 @@ import { useState , useRef , useEffect } from "react";
 import "../pages/home.scss";
 import { ToastContainer, toast , Bounce} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Nav from '../layouts/navbar'
 import { Link , useNavigate } from "react-router-dom";
 
 
@@ -47,6 +47,9 @@ function Regaster() {
         })
     }
   return (
+    <>
+    <Nav/>
+    <div className="main-Login">
     <section className="home2">
     <label htmlFor="">UserName</label>
     <input ref={UserName} type="text" />
@@ -64,6 +67,9 @@ function Regaster() {
     <ToastContainer/>
     <p>آیا حساب کاربری دارید ؟ <Link to={"/Login"}><span>ورود به حساب</span> </Link></p>
     </section>
+    <img src="https://img.freepik.com/premium-vector/survey-research-illustration_90558-16.jpg" alt="w" />
+    </div>
+    </>
   );
 }
 

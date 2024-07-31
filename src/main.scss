@@ -3,4 +3,5 @@
 @use './base/reset';
 @use './base/globals';
 @use "./pages/home.scss";
-@use "./components/components.scss"
+@use "./components/components.scss";
+@use "./layouts/Nav.scss"

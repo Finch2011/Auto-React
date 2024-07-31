@@ -41,34 +41,23 @@ section.home {
       width: 100%;
     }
 
-    .line {
-      position: absolute;
-      width: 5px;
-      height: 1px;
-      left: 0;
-      bottom: -0.1rem;
-      background-color: #d6efd8;
-    }
+    
   }
 }
-h1{
+h2{
   color: white;
 }
-.Login-D-btn{
-  width: 40px;
-  height: 30px;
-  background-color: rgb(162, 27, 27);
-  color: white;
-  border: none;
-  border-radius:3px;
-}
-.Login-D-btn:hover{
-  background-color: transparent;
-  border: 1px solid red;
-  color: red;
-}
-span{
-  color: rgb(0, 132, 255);
-  font-size: 17px;
-  font-weight: bold;
+.main-D{
+  // Display Style 
+  padding: 10px;
+  width: 300px;
+  height:250px;
+  margin-top: 50px;
+  // 
+  // Backgroun Style 
+  background-color: blue;
+  // 
+  // Border style 
+  border-radius: 14px;
+  // 
 }

@@ -3,10 +3,13 @@ import "./home.scss";
 import { ToastContainer, toast , Bounce} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
+import Nav from '../layouts/navbar'
 
 function Home() {
   
   return (
+    <>
+    <Nav/>
     <section className="home">
       <div className="welcome-message">
         <h1> Welcome To Authenticate </h1>
@@ -14,12 +17,11 @@ function Home() {
           This project exist to achive the simple task of Registering a "user" &
           Loging in the "user".
         </p>
-        <Link to={'/dashboard'} > Dashboard <div className="line"> </div> </Link>
-        <Link to={'/regaster'}> Regaster <div className="line"> </div> </Link>
-        <Link to={'/Login'}> Login <div className="line"> </div> </Link>
+        
         
       </div>
     </section>
+    </>
   );
 }
 
