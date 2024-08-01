@@ -60,4 +60,15 @@ h2{
   // Border style 
   border-radius: 14px;
   // 
+  .LogOut{
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+  }
+  .LogOut:hover{
+    background-color: red;
+    color: white;
+  }
 }

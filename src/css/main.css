@@ -112,6 +112,17 @@ h2 {
   background-color: blue;
   border-radius: 14px;
 }
+.main-D .LogOut {
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+.main-D .LogOut:hover {
+  background-color: red;
+  color: white;
+}
 
 body {
   background-color: rgb(10, 29, 51);

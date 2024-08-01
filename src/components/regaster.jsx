@@ -14,7 +14,7 @@ function Regaster() {
     const navigate = useNavigate()
     function handel(){
 
-        fetch ("https://668b3e9e0b61b8d23b08d551.mockapi.io/api/users" , {
+        fetch ("https://66ab8e13636a4840d7cb29a3.mockapi.io/users" , {
             method : 'POST',
             headers:{
                 'Content-Type': 'application/json'
