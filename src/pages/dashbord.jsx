@@ -39,7 +39,12 @@ function Dashbord() {
     <br />
     <hr />
     <br />
-    <h2>bio : Hi I`m Kalil Rahimi I like car BMW</h2>
+    <h2>bio : Hi I`m {localStorage.getItem("username")} I like car BMW</h2>
+    <button onClick={()=>{
+      localStorage.removeItem("username")
+      localStorage.removeItem("password")
+      navigate("/")
+    } } className="LogOut">Log Out</button>
     </div>
     </>
     )

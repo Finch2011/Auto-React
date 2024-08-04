@@ -11,6 +11,7 @@
     "watch": "sass --watch ./src/main.scss:./src/css/main.css"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.1",

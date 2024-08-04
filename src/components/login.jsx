@@ -14,7 +14,7 @@ function Login() {
     function handel(){
       if(UserName.current.value !== "" && Password.current.value !== ""){
         try{
-          fetch (`https://668b3e9e0b61b8d23b08d551.mockapi.io/api/users?username=${UserName.current.value}&password=${Password.current.value}` , {
+          fetch (`https://66ab8e13636a4840d7cb29a3.mockapi.io/users?username=${UserName.current.value}&password=${Password.current.value}` , {
             method : "POST"
           }).then(res => res)
           .then((output)=>{

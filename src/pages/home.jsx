@@ -17,7 +17,7 @@ function Home() {
           This project exist to achive the simple task of Registering a "user" &
           Loging in the "user".
         </p>
-        
+        <button>Larn More</button>
         
       </div>
     </section>
